@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define a altura para preencher a tela */
+}
+
+.calabreso {
+  border: none;
+  background: none;
+  animation: shrink 0.5s ease forwards;
+}
+
+.calabreso:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  from {
+    transform: scale(1); /* Tamanho original */
+  }
+  to {
+    transform: scale(1.5); /* Expande em 50% */
+  }
+}
+
+/* Definição da animação de retração */
+@keyframes shrink {
+  from {
+    transform: scale(1.5); /* Começa expandido */
+  }
+  to {
+    transform: scale(1); /* Retrai para o tamanho original */
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}
